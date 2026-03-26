@@ -4,7 +4,7 @@ Edit this file to match your camera setup, zones, and signal timing.
 """
 
 # ─── VIDEO SOURCE ──────────────────────────────────────────────────────────────
-VIDEO_SOURCE = r"C:\PRASAD\SKIILS\yolo ml model\Smarttraffic_ai\220452.mp4"          # 0 = webcam | "path/to/video.mp4" | "rtsp://..."
+VIDEO_SOURCE = r"C:\PRASAD\SKIILS\yolo ml model\Smarttraffic_ai\14552311-hd_1920_1080_50fps.mp4"          # 0 = webcam | "path/to/video.mp4" | "rtsp://..."
 FRAME_WIDTH  = 1280
 FRAME_HEIGHT = 720
 FPS_TARGET   = 30
@@ -55,11 +55,11 @@ SPEED_CALIB_LINE_2_Y   = 450     # bottom calibration line (pixels)
 SPEED_LIMIT_KMPH       = 50      # alert threshold
 
 # ─── SIGNAL TIMING ─────────────────────────────────────────────────────────────
-MIN_GREEN_SECONDS  = 10
-MAX_GREEN_SECONDS  = 60
-DEFAULT_GREEN      = 20
-YELLOW_SECONDS     = 3
-ALL_RED_SECONDS    = 2           # all-red clearance interval
+MIN_GREEN_SECONDS = 10    # minimum green time (safety lock)
+MAX_GREEN_SECONDS = 60    # maximum green time
+DEFAULT_GREEN     = 20    # default green time
+YELLOW_SECONDS    = 3     # yellow duration
+ALL_RED_SECONDS   = 2     # all-red clearance between phases
 
 # Density thresholds for adaptive timing (vehicles per zone)
 DENSITY_THRESHOLDS = {
